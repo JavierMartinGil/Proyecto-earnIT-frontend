@@ -1,0 +1,66 @@
+.container.pres_index {
+    padding: 50px;
+    margin-top: -75px;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 6px 3px 36px #929292;
+    border-radius: 25px;
+
+}
+
+.pres_index h3 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2D4084;
+    margin: 10px 0;
+}
+
+.pres_index h3 span{   
+    font-weight: 800;    
+}
+
+.pres_index hr {
+    width: 250px;
+    border: 3px solid #F03C79;
+    margin-top: 20px;
+}
+
+.pres_index p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    color: #6a7692;
+    padding-bottom: 25px;
+}
+
+.pres_index .icons{
+    display: flex;
+    max-width: 800px;
+    margin:0 auto;
+}
+
+.single_icon img {
+    max-width: 80px;
+}
+
+.pres_index .icons h4{
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #696969;
+}
+
+.pres_index .icons p{
+    color: #6a7692;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.pres_index .icons .single_icon{
+    padding: 8px;
+}
+

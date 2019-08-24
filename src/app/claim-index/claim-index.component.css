@@ -1,0 +1,36 @@
+.claim_index {
+    background-color: #2d4084;
+    padding: 80px 0;
+    background-image: url(../../assets/img/background-earnit.png);
+    background-size: cover;
+}
+
+.claim_index h3{
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.claim_index h4{
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+}
+
+p.btns{
+    text-align: center;
+    margin: 20px 0;
+}
+
+div.texto_index{
+    display: flex;
+    margin: 40px auto;
+}
+
+div.texto_index div{
+    width: 50%;
+    
+}

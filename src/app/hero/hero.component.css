@@ -1,0 +1,33 @@
+.hero{
+    background-image: url(../../assets/img/comparador-sueldos-it-hero.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.hero h1{
+    color: white;
+    font-weight: 800;
+    max-width: 800px;
+    font-size: 4em;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+.hero h2{
+    color: white;    
+    max-width: 800px;
+    font-size: 2em;    
+    margin-bottom: 30px;
+}
+
+.boton{
+    background: transparent linear-gradient(90deg, #2D4085 0%, #4155A2 100%) 0% 0% no-repeat padding-box;
+    border-radius: 45px;
+    color: white;
+    padding: 20px 30px;
+    display: inline-block;
+    margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: 175px;
+}
