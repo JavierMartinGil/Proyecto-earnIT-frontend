@@ -9,6 +9,7 @@ import { PresentacionComponent } from './presentacion/presentacion.component';
 import { ClaimIndexComponent } from './claim-index/claim-index.component';
 import { IndexComponent } from './index/index.component';
 import { LogosComponent } from './logos/logos.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LogosComponent } from './logos/logos.component';
     PresentacionComponent,
     ClaimIndexComponent,
     IndexComponent,
-    LogosComponent
+    LogosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

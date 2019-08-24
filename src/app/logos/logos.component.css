@@ -1,3 +1,21 @@
 .logos{
-    background-color: blue
+    background-color: #F8FAFF;
+    padding: 25px 0;
+}
+
+.lista_logos{
+    display: flex;
+    justify-content: space-around;
+}
+
+.lista_logos img{
+    filter: grayscale(100);
+    opacity: .7;
+    transition: .3s;
+    width: 60%;
+}
+
+.lista_logos img:hover{
+    filter: grayscale(0);
+    opacity: .9;
 }
