@@ -1,6 +1,7 @@
 footer{
     background-color: #eeeeee;
     padding: 30px 0;
+    padding-bottom: 0;
 }
 
 .subfooter {
@@ -18,10 +19,13 @@ footer{
 
 .footer_container div{
     width: 33%;
-    padding: 5px;
+    padding: 10px;
+    font-size: .8em;
+    padding-bottom: 30px;
+    line-height: 1.3em;
 }
 
-footer h4{
+footer .footer_container h4{
     font-weight: 800;
     font-size: 1.1em;
     color: #333;
