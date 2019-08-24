@@ -7,6 +7,8 @@ import { MenuComponent } from './menu/menu.component';
 import { HeroComponent } from './hero/hero.component';
 import { PresentacionComponent } from './presentacion/presentacion.component';
 import { ClaimIndexComponent } from './claim-index/claim-index.component';
+import { IndexComponent } from './index/index.component';
+import { LogosComponent } from './logos/logos.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { ClaimIndexComponent } from './claim-index/claim-index.component';
     MenuComponent,
     HeroComponent,
     PresentacionComponent,
-    ClaimIndexComponent
+    ClaimIndexComponent,
+    IndexComponent,
+    LogosComponent
   ],
   imports: [
     BrowserModule,

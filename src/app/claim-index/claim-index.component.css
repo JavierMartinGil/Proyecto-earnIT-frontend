@@ -31,6 +31,47 @@ div.texto_index{
 }
 
 div.texto_index div{
-    width: 50%;
-    
+    width: 50%;    
+}
+
+.texto_index h4 {
+    font-size: 2em;
+    font-weight: 800;
+    color: #696969;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.texto_index p {
+    line-height: 1.8em;
+    color: #6a7692;
+}
+
+.texto_left hr {
+    width: 100px;
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 30px;
+    border: 3px solid #2D4084;
+}
+
+.texto_left a {
+    margin-top: 30px;
+    display: block;
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+.texto_left a:hover {
+    color: #F03C79;
+}
+
+.texto_left a span{
+    font-size: 1.3em;
+    transition: .3s;
+}
+
+.texto_left a:hover span{
+    font-size: 1.3em;
+    padding-left: 10px;
 }
