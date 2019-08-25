@@ -7,8 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
 
+  estadobtn: boolean;
+
+  constructor() {
+
+
+    this.estadobtn = false;
+
+  }
+  cambiaestado() {
+
+    this.estadobtn = !this.estadobtn;
+  }
   ngOnInit() {
   }
 

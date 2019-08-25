@@ -1,11 +1,17 @@
 <div class="menu">
     <div class="container">
+        <div class="btn_menu_res" (click)="cambiaestado()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
         <div class="logo">
             <img src="../../assets/img/earnit_logo.png" alt="Comparador sueldos IT">
         </div>
         <div class="navmenu">
+
             <nav>
-                <ul>
+                <ul [ngClass]="{ visible: estadobtn}">
                     <li>
                         <a [routerLink]="['/']">Inicio</a>
                     </li>
@@ -13,7 +19,7 @@
                         <a [routerLink]="['/colabora']">Colabora</a>
                     </li>
                     <li>
-                        <a [routerLink]="['/colabora']">Compara</a>
+                        <a [routerLink]="['/compara']">Compara</a>
                     </li>
                 </ul>
             </nav>

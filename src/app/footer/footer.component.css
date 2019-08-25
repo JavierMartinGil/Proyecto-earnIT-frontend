@@ -5,7 +5,7 @@ footer{
 }
 
 .subfooter {
-    background-color: lightgray;
+    background-color: #e1e1e1;
     padding: 15px 0;
     text-align: center;
     font-size: .8em;
@@ -21,8 +21,13 @@ footer{
     width: 33%;
     padding: 10px;
     font-size: .8em;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     line-height: 1.3em;
+    border-right: 1px solid rgb(206, 206, 206);
+}
+
+.footer_container div:last-child{
+    border-right: none;
 }
 
 footer .footer_container h4{
@@ -31,4 +36,42 @@ footer .footer_container h4{
     color: #333;
     margin-bottom: 25px;
     text-align: left;
+}
+
+p.social{
+    margin-top: 10px;
+}
+
+p.social a i{
+    font-size: 1.5em;
+    color: #333;
+    padding: 0px 10px;
+    transition: .5s;
+}
+
+p.social a:hover i{
+    color: #F03C79;
+    transform: scale(1.1);
+}
+
+ul.menu_footer li,
+ul.menu_legal li{
+    margin: 10px 0px;
+}
+
+ul.menu_footer li:before{
+    content: "\f120";
+    font-family: 'FontAwesome';
+    margin-right: 3px;
+}
+
+ul.menu_footer li a,
+ul.menu_legal li a{
+    transition: .5s;
+    color: #333;
+}
+
+ul.menu_footer li a:hover,
+ul.menu_legal li a:hover{
+    color: #F03C79;
 }
