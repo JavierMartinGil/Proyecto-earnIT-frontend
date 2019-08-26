@@ -1,0 +1,40 @@
+
+
+table{
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #4801ff;
+    background: -webkit-linear-gradient(-68deg, #f03c79 , #2d4084);
+    background: -o-linear-gradient(-68deg, #f03c79 , #2d4084);
+    background: -moz-linear-gradient(-68deg, #f03c79 , #2d4084);
+    background: linear-gradient(-68deg, #f03c79 , #2d4084);
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+table tr{
+    border-top: 1px solid #fafafa;
+}
+
+table th{
+    padding: 15px;
+    background-color: #2d4084;
+    font-weight: bold;
+}
+
+table td{
+    padding: 20px 10px;
+}
+
+table td:hover, table tr:hover,table th:hover{
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.tabla_res h3 {
+    font-size: 2em;
+    color: #f03c79;
+    margin-top: 15px;
+}

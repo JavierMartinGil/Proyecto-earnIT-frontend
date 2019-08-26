@@ -71,6 +71,22 @@ ul.menu_legal li a{
     color: #333;
 }
 
+i.fab.fa-facebook {
+    color: #3b5998!important;
+}
+
+i.fab.fa-twitter {
+    color: #00acee!important;
+}
+
+i.fab.fa-github {
+    color: #333!important;
+}
+
+i.fab.fa-linkedin {
+    color: #0e76a8!important;
+}
+
 ul.menu_footer li a:hover,
 ul.menu_legal li a:hover{
     color: #F03C79;

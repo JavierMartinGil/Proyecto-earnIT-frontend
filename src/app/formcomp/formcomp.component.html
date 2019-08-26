@@ -1,0 +1,57 @@
+<div class="formulario">
+    <div class="container">
+        <form novalidate [formGroup]="formulario_solicitud">
+            <div>
+                <select formControlName="profesion">
+                    <option value="">Seleciona una profesión</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="frontend">Front-end</option>
+                    <option value="backend">Back-end</option>
+                </select>
+            </div>
+            <div>
+                <select formControlName="experiencia">
+                    <option value="">Seleciona tu experiencia</option>
+                    <option value="sinexperiencia">Sin experiencia</option>
+                    <option value="1ano">1 año</option>
+                    <option value="2anos">2 años</option>
+                    <option value="3anos">3 años</option>
+                    <option value="4anos">4 años</option>
+                    <option value="mas4anos">Más de 4 años</option>
+                </select>
+            </div>
+            <div>
+                <select formControlName="tecnologias">
+                    <option value="">Seleciona la tecnologías con la que trabajas</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="angular">Angular</option>
+                    <option value="react">React</option>
+                    <option value="vuejs">VueJS</option>
+                    <option value="php">PHP</option>
+                    <option value="nodejs">NodeJS</option>
+                    <option value="java">Java</option>
+                </select>
+            </div>
+            <div>
+                <input type="submit" value="Buscar">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="container res">
+    <h2>Resultados de la búsqueda</h2>
+    <div class="resultados">
+        <div>
+            <h3>Título de la ocupación</h3>
+            <h4><i class="fas fa-laptop-code"></i> Front-end</h4>
+        </div>
+        <div>
+            <h3>Sueldo promedio</h3>
+            <h4><i class="fas fa-euro-sign"></i> 25.000</h4>
+        </div>
+        <div>
+            <h3>Tecnologías usadas</h3>
+            <h4><i class="fas fa-code"></i> Javascript, Angular</h4>
+        </div>
+    </div>
+</div>

@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ProyectoEarnIT';
+  titulo: string;
+
+  constructor() {
+    this.titulo = "";
+  }
+
+
+
 }

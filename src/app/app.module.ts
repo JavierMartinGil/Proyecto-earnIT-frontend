@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,11 @@ import { ClaimIndexComponent } from './claim-index/claim-index.component';
 import { IndexComponent } from './index/index.component';
 import { LogosComponent } from './logos/logos.component';
 import { FooterComponent } from './footer/footer.component';
+import { ColaboraComponent } from './colabora/colabora.component';
+import { ComparaComponent } from './compara/compara.component';
+import { FormcompComponent } from './formcomp/formcomp.component';
+import { TablaresultadosComponent } from './tablaresultados/tablaresultados.component';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +26,18 @@ import { FooterComponent } from './footer/footer.component';
     ClaimIndexComponent,
     IndexComponent,
     LogosComponent,
-    FooterComponent
+    FooterComponent,
+    ColaboraComponent,
+    ComparaComponent,
+    FormcompComponent,
+    TablaresultadosComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
