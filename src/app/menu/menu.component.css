@@ -8,6 +8,7 @@
 .menu{
     background-color:transparent;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navmenu ul li {
@@ -53,7 +54,8 @@
     padding-top: 7px;
     transition: .5s;
     position: absolute;
-    right: 10px;   
+    top: 5px;
+    right: 5px; 
 }
 
 .navmenu ul{

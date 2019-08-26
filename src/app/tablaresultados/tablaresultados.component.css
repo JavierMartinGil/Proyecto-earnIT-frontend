@@ -38,3 +38,19 @@ table td:hover, table tr:hover,table th:hover{
     color: #f03c79;
     margin-top: 15px;
 }
+
+@media (max-width: 900px){
+    table td {
+    padding: 20px 5px;
+}
+}
+
+@media (max-width: 800px){
+    table{
+        display: none;
+    }
+
+    .tabla_res h3 {
+    display: none;
+}
+}
