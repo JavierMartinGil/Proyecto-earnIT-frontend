@@ -75,3 +75,15 @@ ul.menu_footer li a:hover,
 ul.menu_legal li a:hover{
     color: #F03C79;
 }
+
+@media (max-width: 550px){
+.footer_container {    
+    display: block;   
+}
+
+.footer_container div{
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid grey;
+}
+}

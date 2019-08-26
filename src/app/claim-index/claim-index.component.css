@@ -83,3 +83,23 @@ div.texto_index div{
     }
 
 }
+
+@media (max-width: 500px){
+
+
+
+.btn_trans {   
+    display: block;
+    width: 18em;
+    margin: 15px auto;
+}
+
+div.texto_index {    
+    display: block;   
+}
+
+div.texto_index div {
+    width: 100%;
+}
+
+}

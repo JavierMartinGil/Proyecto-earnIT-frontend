@@ -64,3 +64,17 @@
     padding: 8px;
 }
 
+@media (max-width: 500px){
+.pres_index .icons {
+    display: -webkit-box;
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pres_index .icons p {
+    margin-bottom: 10px;
+}
+
+}
+
