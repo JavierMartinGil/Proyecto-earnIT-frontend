@@ -1,1 +1,46 @@
-<p>formcol works!</p>
+<div class="formulario_colabora">
+    <div class="container">
+        <form novalidate [formGroup]="formulario_colabora">
+            <div class="formcol">
+                <select formControlName="profesion">
+                    <option value="">Seleciona una profesión</option>
+                    <option value="fullstack">Fullstack</option>
+                    <option value="frontend">Front-end</option>
+                    <option value="backend">Back-end</option>
+                </select>
+                <select formControlName="experiencia">
+                    <option value="">Seleciona tu experiencia</option>
+                    <option value="sinexperiencia">Sin experiencia</option>
+                    <option value="1ano">1 año</option>
+                    <option value="2anos">2 años</option>
+                    <option value="3anos">3 años</option>
+                    <option value="4anos">4 años</option>
+                    <option value="mas4anos">Más de 4 años</option>
+                </select>
+            </div>
+            <div class="formcol">
+                <select formControlName="tecnologias">
+                    <option value="">Seleciona la tecnologías con la que trabajas</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="angular">Angular</option>
+                    <option value="react">React</option>
+                    <option value="vuejs">VueJS</option>
+                    <option value="php">PHP</option>
+                    <option value="nodejs">NodeJS</option>
+                    <option value="java">Java</option>
+                </select>
+                <input type="number" formControlName="sueldo" min="12000" max="60000" placeholder="Escribe tu sueldo bruto anual">
+            </div>
+            <div class="formcol">
+                <select formControlName="sector">
+                    <option value="">Seleciona el sector donde trabajas</option>
+                    <option value="consultora">Consultora</option>
+                    <option value="startup">Start-up</option>
+                    <option value="agencia">Agencia</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</div>

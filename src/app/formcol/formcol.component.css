@@ -1,0 +1,35 @@
+div.formcol {
+    display: flex;
+}
+
+div.formcol input[type=number],
+div.formcol select{
+    display: block;
+    width: 47%;
+    margin: 5px;
+    border: double 4px transparent;
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2d4084,#f03c79);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    font-size: 1.1em;
+    height: 60px;
+    outline: none;
+}
+
+div.formcol input[type=submit]{
+    background-color: #2d4084;
+    color: white;
+    height: 60px;
+    border: none;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    border-radius: 80px;
+    font-size: 1.3em;
+}
+
+div.formcol input[type=number]{
+    height: 50px;
+}

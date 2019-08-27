@@ -12,8 +12,25 @@ export class FormcolComponent implements OnInit {
   formulario_colabora: FormGroup;
 
   constructor() {
-    this.formulario_colabora = new FormGroup({});
+    this.formulario_colabora = new FormGroup({
+      profesion: new FormControl('', [
+        Validators.required
+      ]),
+      experiencia: new FormControl('', [
+        Validators.required
+      ]),
+      tecnologias: new FormControl('', [
+        Validators.required
+      ]),
+      sector: new FormControl('', [
+        Validators.required
+      ]),
+      sueldo: new FormControl('', [
+        Validators.required
+      ]),
+    });
   }
+
 
   ngOnInit() {
   }

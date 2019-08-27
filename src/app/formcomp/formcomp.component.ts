@@ -26,6 +26,7 @@ export class FormcompComponent implements OnInit {
     });
   }
 
+
   ngOnInit() {
   }
 
