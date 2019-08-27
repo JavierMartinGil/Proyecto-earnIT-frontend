@@ -8,20 +8,14 @@
 }
 
 .formulario select{    
-    /* border-image-source: linear-gradient(45deg, #2d4084, #f03c79);
-    border-image-slice: 1;
-    border-width: 5px;
-    
-    
-    font-weight: bold;
-    margin: 0 5px;*/
     border: double 4px transparent;
-  border-radius: 80px;
-  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2d4084,#f03c79);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  font-size: 1.1em;
-  
+    border-radius: 80px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2d4084,#f03c79);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    font-size: 1.1em;
+    height: 60px;
+    outline: none;
 } 
 
 
@@ -34,7 +28,8 @@ input[type="submit"] {
     padding: 17px 20px;
     border-radius: 31px;
     transition: .5s;
-    
+    height: 60px;
+    outline: none;  
 }
 
 input[type="submit"]:hover{
@@ -70,7 +65,6 @@ input[type="submit"]:hover{
 @media (max-width: 1080px){
 .formulario select{    
     border-width: 4px;
-    padding: 15px 0px;
     font-size: 1em;
     font-weight: normal;
     margin: 0px 3px;
@@ -85,7 +79,6 @@ input[type="submit"]:hover{
 
 .formulario select {
     border-width: 5px;
-    padding: 15px 0px;
     font-size: 1.2em;
     margin: 10px auto;
     width: 100%;

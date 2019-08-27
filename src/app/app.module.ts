@@ -15,6 +15,7 @@ import { ColaboraComponent } from './colabora/colabora.component';
 import { ComparaComponent } from './compara/compara.component';
 import { FormcompComponent } from './formcomp/formcomp.component';
 import { TablaresultadosComponent } from './tablaresultados/tablaresultados.component';
+import { FormcolComponent } from './formcol/formcol.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { TablaresultadosComponent } from './tablaresultados/tablaresultados.comp
     ComparaComponent,
     FormcompComponent,
     TablaresultadosComponent,
+    FormcolComponent,
 
   ],
   imports: [

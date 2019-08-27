@@ -6,9 +6,14 @@
 }
 
 .menu{
-    background-color:transparent;
+    background: linear-gradient(90deg, #f03c79 , #2d4084);
     padding-top: 10px;
     padding-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navmenu ul li {
@@ -30,13 +35,20 @@
     color: #F03C79;    
 }
 
+.logo {
+    margin-top: 10px;
+}
 
 
 @media (max-width:650px){
 
+.logo {
+    margin-top: 0px;
+}
+
 .menu .container {    
     display: flex;
-    justify-content: space-around;   
+    justify-content: space-between;   
 }
 
 .btn_menu_res div{
@@ -69,16 +81,17 @@
     border-bottom: 1px solid grey;
 }
 
-    .navmenu ul li a{
-        color: #2D4084;
-        width: 100%;
-        height: 100%;
+.navmenu ul li a{
+    color: #2D4084;
+    width: 100%;
+    height: 100%;
+    display: block;
 }
 
-    .logo {
-        display: block;
-        margin-left: 5px;
-        width: 200px;
+.logo {
+    display: block;
+    margin-left: 5px;
+    width: 200px;
 }
 
 .visible{
@@ -103,7 +116,6 @@
     width: 100%;
     font-size: 1.2em;
 }
-
 
 
 }
