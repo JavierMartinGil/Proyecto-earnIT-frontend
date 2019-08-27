@@ -31,6 +31,9 @@ export class FormcolComponent implements OnInit {
     });
   }
 
+  onSubmit() {
+    console.log(this.formulario_colabora.value);
+  }
 
   ngOnInit() {
   }

@@ -1,12 +1,18 @@
+.formulario_colabora{
+    padding: 15px 0;
+    background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #eee 50%, #eee 100%);
+}
+
 div.formcol {
     display: flex;
+    flex-wrap: nowrap;
 }
 
 div.formcol input[type=number],
 div.formcol select{
     display: block;
     width: 47%;
-    margin: 5px;
+    margin: 15px auto;
     border: double 4px transparent;
     border-radius: 80px;
     background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2d4084,#f03c79);
@@ -17,19 +23,60 @@ div.formcol select{
     outline: none;
 }
 
+div.formcol input[type=number],
+div.formcol select{
+    cursor: pointer;
+}
+
 div.formcol input[type=submit]{
     background-color: #2d4084;
     color: white;
     height: 60px;
     border: none;
-    width: 200px;
+    width: 48%;
     text-align: center;
-    margin: 0 auto;
     display: block;
     border-radius: 80px;
     font-size: 1.3em;
+    margin: 15px auto;
+    border: 5px solid #2d4084;
+    transition: .5s;
+}
+
+div.formcol input[type=submit]:hover{
+    cursor: pointer;
+    background-color: #f03c79;
+    border: 5px solid #f03c79;
 }
 
 div.formcol input[type=number]{
     height: 50px;
+}
+
+.imagen_gracias{
+    background-image: url("../../assets/img/earnit_colabora.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.imagen_gracias h3{
+    font-size: 4em;
+    text-align: center;
+    padding: 140px 0;
+    font-weight: 800;
+    color: #2d4084;
+    text-shadow: 0 0 1px #fff;
+}
+
+@media (max-width:600px){
+div.formcol {
+    display: block;
+}
+
+div.formcol input[type=number],
+div.formcol input[type=submit],
+div.formcol select{
+    width:100%;
+}
+
 }

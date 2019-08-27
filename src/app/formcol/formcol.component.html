@@ -1,6 +1,6 @@
 <div class="formulario_colabora">
     <div class="container">
-        <form novalidate [formGroup]="formulario_colabora">
+        <form novalidate [formGroup]="formulario_colabora" (ngSubmit)="onSubmit()">
             <div class="formcol">
                 <select formControlName="profesion">
                     <option value="">Seleciona una profesión</option>
@@ -42,5 +42,10 @@
                 <input type="submit" value="Enviar">
             </div>
         </form>
+    </div>
+</div>
+<div class="imagen_gracias">
+    <div class="container">
+        <h3>!Gracias por tu colaboración!</h3>
     </div>
 </div>

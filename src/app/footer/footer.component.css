@@ -93,7 +93,8 @@ ul.menu_legal li a:hover{
 }
 
 img#logo_footer{
-    width: 200px;
+    width: 200px;    
+    max-width: 100%;
 }
 
 @media (max-width: 550px){

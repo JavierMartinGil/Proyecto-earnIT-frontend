@@ -26,6 +26,9 @@ export class FormcompComponent implements OnInit {
     });
   }
 
+  onSubmit() {
+    console.log(this.formulario_solicitud.value);
+  }
 
   ngOnInit() {
   }

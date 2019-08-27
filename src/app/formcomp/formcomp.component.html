@@ -1,6 +1,6 @@
 <div class="formulario">
     <div class="container">
-        <form novalidate [formGroup]="formulario_solicitud">
+        <form novalidate [formGroup]="formulario_solicitud" (ngSubmit)="onSubmit()">
             <div>
                 <select formControlName="profesion">
                     <option value="">Seleciona una profesión</option>
@@ -12,12 +12,12 @@
             <div>
                 <select formControlName="experiencia">
                     <option value="">Seleciona tu experiencia</option>
-                    <option value="sinexperiencia">Sin experiencia</option>
-                    <option value="1ano">1 año</option>
-                    <option value="2anos">2 años</option>
-                    <option value="3anos">3 años</option>
-                    <option value="4anos">4 años</option>
-                    <option value="mas4anos">Más de 4 años</option>
+                    <option value="0">Sin experiencia</option>
+                    <option value="1">1 año</option>
+                    <option value="2">2 años</option>
+                    <option value="3">3 años</option>
+                    <option value="4">4 años</option>
+                    <option value="5">Más de 4 años</option>
                 </select>
             </div>
             <div>

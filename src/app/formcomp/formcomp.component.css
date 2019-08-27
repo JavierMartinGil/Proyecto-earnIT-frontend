@@ -18,6 +18,10 @@
     outline: none;
 } 
 
+.formulario select:hover{
+    cursor: pointer;
+}
+
 
 input[type="submit"] {
     font-weight: 800;
@@ -34,6 +38,7 @@ input[type="submit"] {
 
 input[type="submit"]:hover{
     background-color: #f03c79;
+    cursor: pointer;
 }
 
 .resultados {
