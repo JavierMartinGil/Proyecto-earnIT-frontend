@@ -92,6 +92,10 @@ ul.menu_legal li a:hover{
     color: #F03C79;
 }
 
+img#logo_footer{
+    width: 200px;
+}
+
 @media (max-width: 550px){
 .footer_container {    
     display: block;   

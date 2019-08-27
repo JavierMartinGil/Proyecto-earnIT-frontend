@@ -8,14 +8,22 @@
 }
 
 .formulario select{    
-    border-image-source: linear-gradient(45deg, #2d4084, #f03c79);
+    /* border-image-source: linear-gradient(45deg, #2d4084, #f03c79);
     border-image-slice: 1;
     border-width: 5px;
-    padding: 15px 5px;
-    font-size: 1.1em;
+    
+    
     font-weight: bold;
-    margin: 0 5px;
-}
+    margin: 0 5px;*/
+    border: double 4px transparent;
+  border-radius: 80px;
+  background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2d4084,#f03c79);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  font-size: 1.1em;
+  
+} 
+
 
 input[type="submit"] {
     font-weight: 800;

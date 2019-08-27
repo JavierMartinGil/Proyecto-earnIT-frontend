@@ -73,7 +73,7 @@ div.texto_index div{
 
 .texto_left a:hover span{
     font-size: 1.3em;
-    padding-left: 10px;
+    padding-left: 10px;    
 }
 
 @media (max-width: 900px){
