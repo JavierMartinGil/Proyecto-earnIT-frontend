@@ -2,25 +2,29 @@
     <div class="container">
         <form novalidate [formGroup]="formulario_colabora" (ngSubmit)="onSubmit()">
             <div class="formcol">
+                <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
                 <select formControlName="profesion">
-                    <option value="">Seleciona una profesión</option>
+                    <option value="">Ej. Full-stack</option>
                     <option value="fullstack">Fullstack</option>
                     <option value="frontend">Front-end</option>
                     <option value="backend">Back-end</option>
                 </select>
+
+                <label for=""><i class="far fa-calendar-check"></i> Selecciona tu experiencia</label>
                 <select formControlName="experiencia">
-                    <option value="">Seleciona tu experiencia</option>
-                    <option value="sinexperiencia">Sin experiencia</option>
-                    <option value="1ano">1 año</option>
-                    <option value="2anos">2 años</option>
-                    <option value="3anos">3 años</option>
-                    <option value="4anos">4 años</option>
-                    <option value="mas4anos">Más de 4 años</option>
+                    <option value="">Ej. 2 años</option>
+                    <option value="0">Sin experiencia</option>
+                    <option value="1">1 año</option>
+                    <option value="2">2 años</option>
+                    <option value="3">3 años</option>
+                    <option value="4">4 años</option>
+                    <option value="5">Más de 4 años</option>
                 </select>
             </div>
             <div class="formcol">
+                <label for=""><i class="far fa-file-code"></i> Selecciona las tecnologías con las que trabajas</label>
                 <select formControlName="tecnologias">
-                    <option value="">Seleciona la tecnologías con la que trabajas</option>
+                    <option value="">Ej. JavaScript</option>
                     <option value="javascript">JavaScript</option>
                     <option value="angular">Angular</option>
                     <option value="react">React</option>
@@ -29,11 +33,13 @@
                     <option value="nodejs">NodeJS</option>
                     <option value="java">Java</option>
                 </select>
-                <input type="number" formControlName="sueldo" min="12000" max="60000" placeholder="Escribe tu sueldo bruto anual">
+                <label for=""><i class="far fa-money-bill-alt"></i> Selecciona tu sueldo bruto anual</label>
+                <input type="number" formControlName="sueldo" min="12000" max="60000" placeholder="Ej. 20000">
             </div>
             <div class="formcol">
+                <label for=""><i class="fas fa-desktop"></i> Seleciona el sector donde trabajas</label>
                 <select formControlName="sector">
-                    <option value="">Seleciona el sector donde trabajas</option>
+                    <option value=""><span>Ej. Consultora</span></option>
                     <option value="consultora">Consultora</option>
                     <option value="startup">Start-up</option>
                     <option value="agencia">Agencia</option>
@@ -46,6 +52,6 @@
 </div>
 <div class="imagen_gracias">
     <div class="container">
-        <h3>!Gracias por tu colaboración!</h3>
+        <h3>¡Gracias por tu colaboración!</h3>
     </div>
 </div>

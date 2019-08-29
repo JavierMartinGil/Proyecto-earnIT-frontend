@@ -3,24 +3,56 @@
     background: linear-gradient(to bottom right, #fff 0%, #fff 50%, #eee 50%, #eee 100%);
 }
 
+.formulario_colabora .container {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 6px 3px 36px #929292;
+    border-radius: 25px;
+    background: #fff;
+    max-width: 75%;
+}
+
 div.formcol {
-    display: flex;
+    /* display: flex;
     flex-wrap: nowrap;
+    justify-content: space-between; */
 }
 
 div.formcol input[type=number],
 div.formcol select{
     display: block;
-    width: 47%;
-    margin: 15px auto;
-    border: double 4px transparent;
-    border-radius: 80px;
-    background-image: linear-gradient(white, white), radial-gradient(circle at top left, #2d4084,#f03c79);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
+    width: 50%;
+    margin: 5px auto;
     font-size: 1.1em;
-    height: 60px;
-    outline: none;
+    height: 50px;
+    outline: none; 
+    margin-bottom: 40px;
+}
+
+div.formcol input[type=number]:hover,
+div.formcol select:hover{
+    background-color: #eee;
+}
+
+form select, input {
+    border: none;
+    border-bottom: 3px solid #f03c79;    
+    color: #6e6e6e;
+    font-weight: bold;    
+}
+
+div.formcol label{
+    display: block;
+    width: 50%;
+    margin: 0px auto;    
+    color: #6e6e6e;    
+    padding-bottom: 4px;
+    font-size: .9em;
+}
+
+label .far,label .fas,label .fa {
+    color: #f03c79;
 }
 
 div.formcol input[type=number],
