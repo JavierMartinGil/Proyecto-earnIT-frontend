@@ -2,16 +2,18 @@
     <div class="container">
         <form novalidate [formGroup]="formulario_solicitud" (ngSubmit)="onSubmit()">
             <div>
+                <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
                 <select formControlName="profesion">
-                    <option value="">Seleciona una profesión</option>
-                    <option value="fullstack">Fullstack</option>
+                    <option value="" disabled>Ej. Full-stack</option>
+                    <option value="fullstack">Full-stack</option>
                     <option value="frontend">Front-end</option>
                     <option value="backend">Back-end</option>
                 </select>
             </div>
             <div>
+                <label for=""><i class="far fa-calendar-alt"></i> Seleciona tu experiencia</label>
                 <select formControlName="experiencia">
-                    <option value="">Seleciona tu. experiencia</option>
+                    <option value="" disabled>Ej. 2 años</option>
                     <option value="0">Sin experiencia</option>
                     <option value="1">1 año</option>
                     <option value="2">2 años</option>
@@ -20,9 +22,9 @@
                     <option value="5">Más de 4 años</option>
                 </select>
             </div>
-            <div>
+            <div> <label for=""><i class="fas fa-desktop"></i> Seleciona la tecnologías con la que trabajas</label>
                 <select formControlName="tecnologias">
-                    <option value="">Seleciona la tecnologías con la que trabajas</option>
+                    <option value="" disabled>Ej. PHP</option>
                     <option value="javascript">JavaScript</option>
                     <option value="angular">Angular</option>
                     <option value="react">React</option>

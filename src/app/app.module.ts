@@ -16,6 +16,7 @@ import { ComparaComponent } from './compara/compara.component';
 import { FormcompComponent } from './formcomp/formcomp.component';
 import { TablaresultadosComponent } from './tablaresultados/tablaresultados.component';
 import { FormcolComponent } from './formcol/formcol.component';
+import { Error404Component } from './error404/error404.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { FormcolComponent } from './formcol/formcol.component';
     FormcompComponent,
     TablaresultadosComponent,
     FormcolComponent,
+    Error404Component,
 
   ],
   imports: [

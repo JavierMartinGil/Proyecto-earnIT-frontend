@@ -1,0 +1,42 @@
+div.error_container{
+    background-image: url(../../assets/img/error_404.jpg);
+    padding: 200px 0;
+    background-size: cover;
+    background-position: center center;
+}
+
+.error_container h1{
+    font-size: 3em;
+    text-align: center;
+    font-weight: 800;
+    color: #333;
+}
+
+.error_container h2{
+    font-size: 2em;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+.error_container a{
+    background: transparent -webkit-gradient(linear, left top, right top, from(#2D4085), to(#4155A2)) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #2D4085 0%, #4155A2 100%) 0% 0% no-repeat padding-box;
+    border-radius: 45px;
+    color: white;
+    padding: 20px 30px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: 190px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    max-width: 220px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.error_container a:hover{
+    transform: scale(1.1);
+}

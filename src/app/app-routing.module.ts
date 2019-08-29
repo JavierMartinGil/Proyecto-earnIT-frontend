@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent } from './index/index.component';
 import { ColaboraComponent } from './colabora/colabora.component';
 import { ComparaComponent } from './compara/compara.component';
+import { Error404Component } from './error404/error404.component';
 
 
 
@@ -11,7 +12,8 @@ import { ComparaComponent } from './compara/compara.component';
 const routes: Routes = [
   { path: '', component: IndexComponent },
   { path: 'colabora', component: ColaboraComponent },
-  { path: 'compara', component: ComparaComponent }
+  { path: 'compara', component: ComparaComponent },
+  { path: '**', component: Error404Component }
 ];
 
 
