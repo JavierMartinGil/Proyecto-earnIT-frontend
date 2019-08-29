@@ -59,7 +59,7 @@ ul.menu_legal li{
     margin: 10px 0px;
 }
 
-ul.menu_footer li:before{
+ul.menu_footer li a:before{
     content: "\f120";
     font-family: 'FontAwesome';
     margin-right: 3px;

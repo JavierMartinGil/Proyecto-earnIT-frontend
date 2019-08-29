@@ -9,6 +9,9 @@
                     <option value="frontend">Front-end</option>
                     <option value="backend">Back-end</option>
                 </select>
+                <p class="error" *ngIf="formulario_colabora.controls['profesion'].errors?.required && formulario_colabora.controls['profesion'].touched">
+                    El campo nombre es requerido
+                </p>
 
                 <label for=""><i class="far fa-calendar-check"></i> Selecciona tu experiencia</label>
                 <select formControlName="experiencia">
@@ -20,6 +23,9 @@
                     <option value="4">4 años</option>
                     <option value="5">Más de 4 años</option>
                 </select>
+                <p class="error" *ngIf="formulario_colabora.controls['experiencia'].errors?.required && formulario_colabora.controls['experiencia'].touched">
+                    El campo nombre es requerido
+                </p>
             </div>
             <div class="formcol">
                 <label for=""><i class="far fa-file-code"></i> Selecciona las tecnologías con las que trabajas</label>
@@ -45,7 +51,7 @@
                     <option value="agencia">Agencia</option>
                     <option value="otro">Otro</option>
                 </select>
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" [disabled]="!formulario_colabora.valid">
             </div>
         </form>
     </div>
