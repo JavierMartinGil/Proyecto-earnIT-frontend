@@ -1,6 +1,6 @@
 <div class="formulario_colabora">
     <div class="container">
-        <form novalidate [formGroup]="formulario_colabora" (ngSubmit)="onSubmit()">
+        <form novalidate [formGroup]="formulario_colabora" (ngSubmit)="onSubmit()" method="POST">
             <div class="formcol">
                 <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
                 <select formControlName="profesion">
@@ -38,6 +38,7 @@
                     <option value="php">PHP</option>
                     <option value="nodejs">NodeJS</option>
                     <option value="java">Java</option>
+                    <option value="net">.Net</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['tecnologias'].errors?.required && formulario_colabora.controls['tecnologias'].touched">
                     ⚠ El campo tecnologías es requerido ⚠

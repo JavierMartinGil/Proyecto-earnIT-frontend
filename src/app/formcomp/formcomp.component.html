@@ -38,13 +38,14 @@
                     <option value="php">PHP</option>
                     <option value="nodejs">NodeJS</option>
                     <option value="java">Java</option>
+                    <option value="net">.Net</option>
                 </select>
                 <p class="error" *ngIf="formulario_solicitud.controls['tecnologias'].errors?.required && formulario_solicitud.controls['tecnologias'].touched">
                     ⚠ El campo tecnologias es requerido ⚠
                 </p>
             </div>
             <div>
-                <input type="submit" value="Buscar">
+                <input type="submit" value="Buscar" [disabled]="!formulario_solicitud.valid">
             </div>
         </form>
     </div>

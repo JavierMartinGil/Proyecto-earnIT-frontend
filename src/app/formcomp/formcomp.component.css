@@ -37,6 +37,12 @@ div.formcol select:hover{
     margin: 20px auto;
 }
 
+input[disabled]{
+    background-color: #929292!important;
+    border-color: #929292!important;
+    cursor: no-drop!important;
+}
+
 form select, input {
     border: none;
     border-bottom: 3px solid #f03c79;    

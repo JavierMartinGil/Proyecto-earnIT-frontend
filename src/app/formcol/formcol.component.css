@@ -114,6 +114,12 @@ div.formcol input[type=number]{
     color: #2d4084;
 }
 
+input[disabled]{
+    background-color: #929292!important;
+    border-color: #929292!important;
+    cursor: no-drop!important;
+}
+
 @media (max-width: 900px){
     .formulario_colabora .container {
     max-width: 95%;    
