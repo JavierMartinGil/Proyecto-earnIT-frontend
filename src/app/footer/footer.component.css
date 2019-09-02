@@ -60,9 +60,7 @@ ul.menu_legal li{
 }
 
 ul.menu_footer li a:before{
-    content: "\f120";
-    font-family: 'FontAwesome';
-    margin-right: 3px;
+    content: ">_";
 }
 
 ul.menu_footer li a,

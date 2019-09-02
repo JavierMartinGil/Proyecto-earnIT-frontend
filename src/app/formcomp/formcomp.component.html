@@ -9,6 +9,9 @@
                     <option value="frontend">Front-end</option>
                     <option value="backend">Back-end</option>
                 </select>
+                <p class="error" *ngIf="formulario_solicitud.controls['profesion'].errors?.required && formulario_solicitud.controls['profesion'].touched">
+                    ⚠ El campo profesión es requerido ⚠
+                </p>
             </div>
             <div>
                 <label for=""><i class="far fa-calendar-alt"></i> Seleciona tu experiencia</label>
@@ -21,6 +24,9 @@
                     <option value="4">4 años</option>
                     <option value="5">Más de 4 años</option>
                 </select>
+                <p class="error" *ngIf="formulario_solicitud.controls['experiencia'].errors?.required && formulario_solicitud.controls['experiencia'].touched">
+                    ⚠ El campo experiencia es requerido ⚠
+                </p>
             </div>
             <div> <label for=""><i class="fas fa-desktop"></i> Seleciona la tecnologías con la que trabajas</label>
                 <select formControlName="tecnologias">
@@ -33,6 +39,9 @@
                     <option value="nodejs">NodeJS</option>
                     <option value="java">Java</option>
                 </select>
+                <p class="error" *ngIf="formulario_solicitud.controls['tecnologias'].errors?.required && formulario_solicitud.controls['tecnologias'].touched">
+                    ⚠ El campo tecnologias es requerido ⚠
+                </p>
             </div>
             <div>
                 <input type="submit" value="Buscar">

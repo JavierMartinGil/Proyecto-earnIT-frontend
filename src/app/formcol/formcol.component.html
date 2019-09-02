@@ -10,7 +10,7 @@
                     <option value="backend">Back-end</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['profesion'].errors?.required && formulario_colabora.controls['profesion'].touched">
-                    El campo nombre es requerido
+                    ⚠ El campo profesión es requerido ⚠
                 </p>
 
                 <label for=""><i class="far fa-calendar-check"></i> Selecciona tu experiencia</label>
@@ -24,7 +24,7 @@
                     <option value="5">Más de 4 años</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['experiencia'].errors?.required && formulario_colabora.controls['experiencia'].touched">
-                    El campo nombre es requerido
+                    ⚠ El campo experiencia es requerido ⚠
                 </p>
             </div>
             <div class="formcol">
@@ -39,9 +39,15 @@
                     <option value="nodejs">NodeJS</option>
                     <option value="java">Java</option>
                 </select>
+                <p class="error" *ngIf="formulario_colabora.controls['tecnologias'].errors?.required && formulario_colabora.controls['tecnologias'].touched">
+                    ⚠ El campo tecnologías es requerido ⚠
+                </p>
                 <label for=""><i class="far fa-money-bill-alt"></i> Selecciona tu sueldo bruto anual</label>
                 <input type="number" formControlName="sueldo" min="12000" max="60000" placeholder="Ej. 20000">
             </div>
+            <p class="error" *ngIf="formulario_colabora.controls['sueldo'].errors?.required && formulario_colabora.controls['sueldo'].touched">
+                ⚠ El campo sueldo es requerido ⚠
+            </p>
             <div class="formcol">
                 <label for=""><i class="fas fa-desktop"></i> Seleciona el sector donde trabajas</label>
                 <select formControlName="sector">
@@ -51,6 +57,9 @@
                     <option value="agencia">Agencia</option>
                     <option value="otro">Otro</option>
                 </select>
+                <p class="error" *ngIf="formulario_colabora.controls['sector'].errors?.required && formulario_colabora.controls['sector'].touched">
+                    ⚠ El campo sector es requerido ⚠
+                </p>
                 <input type="submit" value="Enviar" [disabled]="!formulario_colabora.valid">
             </div>
         </form>

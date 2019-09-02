@@ -8,7 +8,7 @@
 }
 
 .formulario .container{
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px;
     box-shadow: 6px 3px 36px #929292;
     border-radius: 25px;
@@ -29,6 +29,12 @@ div.formcol select{
 div.formcol input[type=number]:hover,
 div.formcol select:hover{
     background-color: #eee;
+}
+
+.error{
+    width: 50%;
+    color: red;
+    margin: 20px auto;
 }
 
 form select, input {
@@ -105,10 +111,10 @@ input[type="submit"]:hover{
 
 .container.res h2 {
     text-align: center;
-    padding: 20px 0;
+    padding: 50px 0;
     font-size: 2em;
     font-weight: bold;
-    color: #333;
+    color: #6e6e6e;
 }
 
 .resultados h3 {
@@ -138,6 +144,12 @@ input[type="submit"]:hover{
 
 .formulario .container{
     max-width: 95%;
+}
+
+.error{
+    width: 100%;
+    color: red;
+    margin: 20px auto;
 }
 
 .formulario .container form {   

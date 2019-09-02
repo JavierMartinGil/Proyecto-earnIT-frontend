@@ -5,7 +5,7 @@
 
 .formulario_colabora .container {
     max-width: 95%;
-    margin: 0 auto;
+    margin: 10px auto;
     padding: 20px;
     box-shadow: 6px 3px 36px #929292;
     border-radius: 25px;
@@ -34,6 +34,12 @@ div.formcol select{
     color: #6e6e6e;
     font-weight: bold;
     transition: .5s;   
+}
+
+.error{
+    width: 50%;
+    color: red;
+    margin: 20px auto;
 }
 
 div.formcol input[type=number]:hover,
@@ -113,6 +119,13 @@ div.formcol input[type=number]{
     .formulario_colabora .container {
     max-width: 95%;    
 }
+
+.error{
+    width: 50%;
+    color: red;
+    margin: 20px auto;
+}
+
 }
 
 @media (max-width:650px){
