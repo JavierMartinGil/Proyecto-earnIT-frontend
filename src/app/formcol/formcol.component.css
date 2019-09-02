@@ -100,19 +100,18 @@ div.formcol input[type=number]{
     height: 50px;
 }
 
-.imagen_gracias{
-    background-image: url("../../assets/img/earnit_colabora.png");
-    background-repeat: no-repeat;
-    background-position: center center;
+.imagen_gracias img{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
 }
 
 .imagen_gracias h3{
     font-size: 4em;
     text-align: center;
-    padding: 140px 0;
+    padding: 50px 0;
     font-weight: 800;
     color: #2d4084;
-    text-shadow: 0 0 1px #fff;
 }
 
 @media (max-width: 900px){
@@ -124,6 +123,14 @@ div.formcol input[type=number]{
     width: 50%;
     color: red;
     margin: 20px auto;
+}
+
+.imagen_gracias h3{
+    font-size: 2em;
+}
+
+.banner_col {
+    margin-top: 50px;
 }
 
 }
