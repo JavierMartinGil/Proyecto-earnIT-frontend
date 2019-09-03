@@ -3,13 +3,13 @@
         <form novalidate [formGroup]="formulario_colabora" (ngSubmit)="onSubmit()" method="POST">
             <div class="formcol">
                 <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
-                <select formControlName="profesion">
+                <select formControlName="cargo">
                     <option value="" disabled>Ej. Full-stack</option>
                     <option value="fullstack">Fullstack</option>
                     <option value="frontend">Front-end</option>
                     <option value="backend">Back-end</option>
                 </select>
-                <p class="error" *ngIf="formulario_colabora.controls['profesion'].errors?.required && formulario_colabora.controls['profesion'].touched">
+                <p class="error" *ngIf="formulario_colabora.controls['cargo'].errors?.required && formulario_colabora.controls['cargo'].touched">
                     ⚠ El campo profesión es requerido ⚠
                 </p>
 
@@ -29,7 +29,7 @@
             </div>
             <div class="formcol">
                 <label for=""><i class="far fa-file-code"></i> Selecciona las tecnologías con las que trabajas</label>
-                <select formControlName="tecnologias">
+                <select formControlName="tecnologia">
                     <option value="" disabled>Ej. JavaScript</option>
                     <option value="javascript">JavaScript</option>
                     <option value="angular">Angular</option>
@@ -40,13 +40,13 @@
                     <option value="java">Java</option>
                     <option value="net">.Net</option>
                 </select>
-                <p class="error" *ngIf="formulario_colabora.controls['tecnologias'].errors?.required && formulario_colabora.controls['tecnologias'].touched">
+                <p class="error" *ngIf="formulario_colabora.controls['tecnologia'].errors?.required && formulario_colabora.controls['tecnologia'].touched">
                     ⚠ El campo tecnologías es requerido ⚠
                 </p>
                 <label for=""><i class="far fa-money-bill-alt"></i> Selecciona tu sueldo bruto anual</label>
-                <input type="number" formControlName="sueldo" min="12000" max="60000" placeholder="Ej. 20000">
+                <input type="number" formControlName="bruto" min="12000" max="60000" placeholder="Ej. 20000">
             </div>
-            <p class="error" *ngIf="formulario_colabora.controls['sueldo'].errors?.required && formulario_colabora.controls['sueldo'].touched">
+            <p class="error" *ngIf="formulario_colabora.controls['bruto'].errors?.required && formulario_colabora.controls['bruto'].touched">
                 ⚠ El campo sueldo es requerido ⚠
             </p>
             <div class="formcol">
@@ -56,7 +56,7 @@
                     <option value="consultora">Consultora</option>
                     <option value="startup">Start-up</option>
                     <option value="agencia">Agencia</option>
-                    <option value="otro">Otro</option>
+                    <option value="otros">Otro</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['sector'].errors?.required && formulario_colabora.controls['sector'].touched">
                     ⚠ El campo sector es requerido ⚠
@@ -64,11 +64,5 @@
                 <input type="submit" value="Enviar" [disabled]="!formulario_colabora.valid">
             </div>
         </form>
-    </div>
-</div>
-<div class="imagen_gracias">
-    <div class="container">
-        <h3>¡Gracias por tu colaboración!</h3>
-        <img src="../../assets/img/earnit_colabora.png" alt="Gracias por colaborar con earnIT">
     </div>
 </div>

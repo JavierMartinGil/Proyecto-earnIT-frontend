@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { ColaboraService } from '../colabora.service'
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -11,21 +13,21 @@ export class FormcolComponent implements OnInit {
 
   formulario_colabora: FormGroup;
 
-  constructor() {
+  constructor(private colaboraService: ColaboraService, private router: Router) {
     this.formulario_colabora = new FormGroup({
-      profesion: new FormControl('', [
+      cargo: new FormControl('', [
         Validators.required
       ]),
       experiencia: new FormControl('', [
         Validators.required
       ]),
-      tecnologias: new FormControl('', [
+      tecnologia: new FormControl('', [
         Validators.required
       ]),
       sector: new FormControl('', [
         Validators.required
       ]),
-      sueldo: new FormControl('', [
+      bruto: new FormControl('', [
         Validators.required
       ]),
     });
@@ -33,6 +35,16 @@ export class FormcolComponent implements OnInit {
 
   onSubmit() {
     console.log(this.formulario_colabora.value);
+    this.colaboraService.nuevo(this.formulario_colabora.value)
+      .then(response => {
+        console.log(response);
+        if (response) {
+          this.router.navigate(['/gracias'])
+        }
+      })
+      .catch(err => {
+        alert('Error en el registro. Inténtalo más tarde.');
+      })
 
   }
 

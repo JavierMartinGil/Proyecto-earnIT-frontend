@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { FormcompComponent } from './formcomp/formcomp.component';
 import { TablaresultadosComponent } from './tablaresultados/tablaresultados.component';
 import { FormcolComponent } from './formcol/formcol.component';
 import { Error404Component } from './error404/error404.component';
+import { GraciasComponent } from './gracias/gracias.component';
 
 
 @NgModule({
@@ -35,13 +37,15 @@ import { Error404Component } from './error404/error404.component';
     TablaresultadosComponent,
     FormcolComponent,
     Error404Component,
+    GraciasComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

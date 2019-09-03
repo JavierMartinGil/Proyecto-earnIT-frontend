@@ -1,0 +1,31 @@
+.imagen_gracias{
+    margin-top:40px
+}
+
+.imagen_gracias img{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.imagen_gracias h3{
+    font-size: 4em;
+    text-align: center;
+    padding: 50px 0;
+    font-weight: 800;
+    color: #2d4084;
+}
+
+
+
+@media (max-width: 900px){
+    
+.imagen_gracias h3{
+    font-size: 2em;
+}
+
+.banner_col {
+    margin-top: 50px;
+}
+
+}
