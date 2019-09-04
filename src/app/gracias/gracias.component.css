@@ -1,31 +1,78 @@
 .imagen_gracias{
-    margin-top:40px
+    margin-top:40px;
+    background-image: url(../../assets/img/earnit-gracias.jpg);
+    background-size: cover;
+    padding: 150px 0;
 }
 
-.imagen_gracias img{
-    width: 60%;
-    margin: 0 auto;
+.imagen_gracias hr{
+    width: 250px;
     display: block;
+    border: 3px solid #F03C79;
 }
 
 .imagen_gracias h3{
     font-size: 4em;
-    text-align: center;
-    padding: 50px 0;
+    padding: 35px 0;
     font-weight: 800;
     color: #2d4084;
+    max-width: 60%;
+    line-height: 1.5em;
 }
 
+.imagen_gracias .boton{
+    background: transparent -webkit-gradient(linear, left top, right top, from(#2D4085), to(#4155A2)) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(90deg, #2D4085 0%, #4155A2 100%) 0% 0% no-repeat padding-box;
+    border-radius: 45px;
+    color: white;
+    padding: 20px 30px;
+    display: inline-block;
+    margin-top: 40px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-bottom: 50px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
 
+.imagen_gracias .boton:hover{
+    transform: scale(1.1);
+}
 
 @media (max-width: 900px){
     
 .imagen_gracias h3{
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 .banner_col {
     margin-top: 50px;
+}
+
+}
+
+@media (max-width: 800px){
+
+.imagen_gracias h3{
+    
+    max-width: 100%;
+    text-align: center;
+}
+
+.imagen_gracias hr{
+    margin: auto;
+}
+
+.imagen_gracias .boton{
+    margin: 30px auto;
+    display: block;
+    max-width: 270px;
+    text-align: center;
+}
+
+.imagen_gracias{   
+    background-size: cover;
+    background-position: center;
 }
 
 }

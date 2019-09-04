@@ -5,9 +5,9 @@
                 <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
                 <select formControlName="cargo">
                     <option value="" disabled>Ej. Full-stack</option>
-                    <option value="fullstack">Fullstack</option>
-                    <option value="frontend">Front-end</option>
-                    <option value="backend">Back-end</option>
+                    <option value="Full-stack">Full-stack</option>
+                    <option value="Fron-tend">Front-end</option>
+                    <option value="Back-end">Back-end</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['cargo'].errors?.required && formulario_colabora.controls['cargo'].touched">
                     ⚠ El campo profesión es requerido ⚠
@@ -28,17 +28,18 @@
                 </p>
             </div>
             <div class="formcol">
-                <label for=""><i class="far fa-file-code"></i> Selecciona las tecnologías con las que trabajas</label>
+                <label for=""><i class="far fa-file-code"></i> Selecciona la tecnología con la que trabajas</label>
                 <select formControlName="tecnologia">
                     <option value="" disabled>Ej. JavaScript</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="angular">Angular</option>
-                    <option value="react">React</option>
-                    <option value="vuejs">VueJS</option>
-                    <option value="php">PHP</option>
-                    <option value="nodejs">NodeJS</option>
-                    <option value="java">Java</option>
-                    <option value="net">.Net</option>
+                    <option value="Javascript">JavaScript</option>
+                    <option value="Angular">Angular</option>
+                    <option value="React">React</option>
+                    <option value="Vue.js">VueJS</option>
+                    <option value="PHP">PHP</option>
+                    <option value="NodeJS">NodeJS</option>
+                    <option value="Java">Java</option>
+                    <option value=".Net">.Net</option>
+                    <option value=".Net">Python</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['tecnologia'].errors?.required && formulario_colabora.controls['tecnologia'].touched">
                     ⚠ El campo tecnologías es requerido ⚠
@@ -53,10 +54,10 @@
                 <label for=""><i class="fas fa-desktop"></i> Seleciona el sector donde trabajas</label>
                 <select formControlName="sector">
                     <option value="" disabled><span>Ej. Consultora</span></option>
-                    <option value="consultora">Consultora</option>
-                    <option value="startup">Start-up</option>
-                    <option value="agencia">Agencia</option>
-                    <option value="otros">Otro</option>
+                    <option value="Consultora">Consultora</option>
+                    <option value="Start-up">Start-up</option>
+                    <option value="Agencia">Agencia</option>
+                    <option value="Otros">Otros</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['sector'].errors?.required && formulario_colabora.controls['sector'].touched">
                     ⚠ El campo sector es requerido ⚠

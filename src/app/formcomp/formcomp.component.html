@@ -5,9 +5,9 @@
                 <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
                 <select formControlName="profesion">
                     <option value="" disabled>Ej. Full-stack</option>
-                    <option value="fullstack">Full-stack</option>
-                    <option value="frontend">Front-end</option>
-                    <option value="backend">Back-end</option>
+                    <option value="Full-stack">Full-stack</option>
+                    <option value="Front-end">Front-end</option>
+                    <option value="Back-end">Back-end</option>
                 </select>
                 <p class="error" *ngIf="formulario_solicitud.controls['profesion'].errors?.required && formulario_solicitud.controls['profesion'].touched">
                     ⚠ El campo profesión es requerido ⚠
@@ -30,15 +30,16 @@
             </div>
             <div> <label for=""><i class="fas fa-desktop"></i> Seleciona la tecnologías con la que trabajas</label>
                 <select formControlName="tecnologias">
-                    <option value="" disabled>Ej. PHP</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="angular">Angular</option>
-                    <option value="react">React</option>
-                    <option value="vuejs">VueJS</option>
-                    <option value="php">PHP</option>
-                    <option value="nodejs">NodeJS</option>
-                    <option value="java">Java</option>
-                    <option value="net">.Net</option>
+                    <option value="" disabled>Ej. JavaScript</option>
+                    <option value="Javascript">JavaScript</option>
+                    <option value="Angular">Angular</option>
+                    <option value="React">React</option>
+                    <option value="Vue.js">VueJS</option>
+                    <option value="PHP">PHP</option>
+                    <option value="NodeJS">NodeJS</option>
+                    <option value="Java">Java</option>
+                    <option value=".Net">.Net</option>
+                    <option value=".Net">Python</option>
                 </select>
                 <p class="error" *ngIf="formulario_solicitud.controls['tecnologias'].errors?.required && formulario_solicitud.controls['tecnologias'].touched">
                     ⚠ El campo tecnologias es requerido ⚠
