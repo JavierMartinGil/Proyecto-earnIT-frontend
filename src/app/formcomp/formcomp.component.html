@@ -1,15 +1,15 @@
 <div class="formulario">
     <div class="container">
-        <form novalidate [formGroup]="formulario_solicitud" (ngSubmit)="onSubmit()">
+        <form novalidate [formGroup]="formulario_solicitud" (ngSubmit)="onSubmit()" method="POST">
             <div>
                 <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
-                <select formControlName="profesion">
+                <select formControlName="cargo">
                     <option value="" disabled>Ej. Full-stack</option>
                     <option value="Full-stack">Full-stack</option>
                     <option value="Front-end">Front-end</option>
                     <option value="Back-end">Back-end</option>
                 </select>
-                <p class="error" *ngIf="formulario_solicitud.controls['profesion'].errors?.required && formulario_solicitud.controls['profesion'].touched">
+                <p class="error" *ngIf="formulario_solicitud.controls['cargo'].errors?.required && formulario_solicitud.controls['cargo'].touched">
                     ⚠ El campo profesión es requerido ⚠
                 </p>
             </div>
@@ -29,7 +29,7 @@
                 </p>
             </div>
             <div> <label for=""><i class="fas fa-desktop"></i> Seleciona la tecnologías con la que trabajas</label>
-                <select formControlName="tecnologias">
+                <select formControlName="tecnologia">
                     <option value="" disabled>Ej. JavaScript</option>
                     <option value="Javascript">JavaScript</option>
                     <option value="Angular">Angular</option>
@@ -39,9 +39,9 @@
                     <option value="NodeJS">NodeJS</option>
                     <option value="Java">Java</option>
                     <option value=".Net">.Net</option>
-                    <option value=".Net">Python</option>
+                    <option value="Python">Python</option>
                 </select>
-                <p class="error" *ngIf="formulario_solicitud.controls['tecnologias'].errors?.required && formulario_solicitud.controls['tecnologias'].touched">
+                <p class="error" *ngIf="formulario_solicitud.controls['tecnologia'].errors?.required && formulario_solicitud.controls['tecnologia'].touched">
                     ⚠ El campo tecnologias es requerido ⚠
                 </p>
             </div>
@@ -51,20 +51,20 @@
         </form>
     </div>
 </div>
-<div class="container res">
+<div class="container res" id="resultados">
     <h2>Resultados de la búsqueda</h2>
     <div class="resultados">
         <div>
             <h3>Título de la ocupación</h3>
-            <h4><i class="fas fa-laptop-code"></i> Front-end</h4>
+            <h4><i class="fas fa-laptop-code"></i> {{datos_devs.cargo}}</h4>
         </div>
         <div>
             <h3>Sueldo promedio</h3>
-            <h4><i class="fas fa-euro-sign"></i> 25.000</h4>
+            <h4><i class="fas fa-euro-sign"></i> {{salario_medio}}</h4>
         </div>
         <div>
             <h3>Tecnología usada</h3>
-            <h4><i class="fas fa-code"></i> Javascript</h4>
+            <h4><i class="fas fa-code"></i> {{datos_devs.tecnologia}}</h4>
         </div>
     </div>
 </div>
