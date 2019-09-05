@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ComparaService } from '../compara.service'
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-formcomp',
@@ -38,13 +38,15 @@ export class FormcompComponent implements OnInit {
       .then(response => {
         this.salario_medio = parseInt(response[0][0]['salario_medio']);
         this.datos_devs = response[1][0];
-        console.log(this.salario_medio);
-        console.log(this.datos_devs);
-        this.router.navigate['#resultados']
+        this.scrollToElement('respuesta');
       })
       .catch(err => {
         alert(err);
       })
+  }
+
+  scrollToElement($element): void {
+    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
   }
 
   ngOnInit() {
