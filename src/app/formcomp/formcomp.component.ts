@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ComparaService } from '../compara.service'
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-formcomp',
@@ -11,13 +11,14 @@ import { Router, RouterLink } from '@angular/router';
 export class FormcompComponent implements OnInit {
 
   formulario_solicitud: FormGroup;
-  salario_medio: number;
+  salario_medio: string;
   datos_devs: any;
+  datos_totales: any;
 
 
   constructor(private comparaService: ComparaService, private router: Router) {
 
-    this.salario_medio = 0;
+    this.salario_medio = "";
     this.datos_devs = [];
 
     this.formulario_solicitud = new FormGroup({
@@ -36,17 +37,25 @@ export class FormcompComponent implements OnInit {
   onSubmit() {
     this.comparaService.comparar(this.formulario_solicitud.value)
       .then(response => {
-        this.salario_medio = parseInt(response[0][0]['salario_medio']);
-        this.datos_devs = response[1][0];
-        this.scrollToElement('respuesta');
+        if (response[0][0]['salario_medio'] == null) {
+          this.salario_medio = 'No se han encontrado resultados';
+          return;
+        } else {
+          this.salario_medio = response[0][0]['salario_medio'].toString().substring(0, 5);
+          this.datos_devs = response[1][0];
+          this.datos_totales = response[1];
+          console.log(this.datos_totales)
+        }
+
       })
       .catch(err => {
-        alert(err);
+        alert(err.message);
       })
   }
 
-  scrollToElement($element): void {
-    $element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+
+  scroll(element) {
+    element.scrollIntoView();
   }
 
   ngOnInit() {

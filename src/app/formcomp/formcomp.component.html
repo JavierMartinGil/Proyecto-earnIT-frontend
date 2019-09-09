@@ -46,7 +46,7 @@
                 </p>
             </div>
             <div>
-                <input type="submit" value="Buscar" [disabled]="!formulario_solicitud.valid">
+                <input type="submit" value="Buscar" [disabled]="!formulario_solicitud.valid" (click)="scroll(respuesta)">
             </div>
         </form>
     </div>
@@ -59,8 +59,8 @@
             <h4><i class="fas fa-laptop-code"></i> {{datos_devs.cargo}}</h4>
         </div>
         <div>
-            <h3>Sueldo promedio</h3>
-            <h4><i class="fas fa-euro-sign"></i> {{salario_medio}}</h4>
+            <h3>Sueldo promedio b/a</h3>
+            <h4>{{salario_medio || 3000}} <i class="fas fa-euro-sign"></i></h4>
         </div>
         <div>
             <h3>Tecnología usada</h3>
@@ -68,3 +68,4 @@
         </div>
     </div>
 </div>
+<app-tablaresultados [datos_totales]="datos_totales"></app-tablaresultados>
