@@ -38,8 +38,8 @@ export class FormcompComponent implements OnInit {
     this.comparaService.comparar(this.formulario_solicitud.value)
       .then(response => {
         if (response[0][0]['salario_medio'] == null) {
-          this.salario_medio = 'No se han encontrado resultados';
-          return;
+          this.salario_medio = 'No hay resultados';
+
         } else {
           this.salario_medio = response[0][0]['salario_medio'].toString().substring(0, 5);
           this.datos_devs = response[1][0];
