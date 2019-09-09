@@ -7,8 +7,8 @@
 
 .menu{
     background: linear-gradient(90deg, #f03c79 , #2d4084);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     position: fixed;
     top: 0;
     left: 0;
@@ -36,14 +36,18 @@
 }
 
 .logo {
-    margin-top: 10px;
+    margin-top: 0px;
 }
 
 
 @media (max-width:650px){
 
+.menu {    
+    padding-bottom: 10px;   
+}
+
 .logo {
-    margin-top: 0px;
+    margin-top: 10px;
 }
 
 .menu .container {    

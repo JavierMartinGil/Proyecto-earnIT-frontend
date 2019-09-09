@@ -18,6 +18,8 @@
     max-width: 800px;
     font-size: 2em;    
     margin-bottom: 30px;
+    font-weight: 300;
+    line-height: 1.3em;
 }
 
 .boton{
@@ -35,6 +37,7 @@
 
 .boton:hover{
 transform: scale(1.1);
+cursor: pointer;
 }
 
 @media (max-width: 900px){
