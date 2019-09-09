@@ -12,4 +12,5 @@ export class ClaimIndexComponent implements OnInit {
   ngOnInit() {
   }
 
+
 }

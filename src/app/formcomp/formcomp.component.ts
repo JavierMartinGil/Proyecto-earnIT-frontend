@@ -44,7 +44,6 @@ export class FormcompComponent implements OnInit {
           this.salario_medio = response[0][0]['salario_medio'].toString().substring(0, 5);
           this.datos_devs = response[1][0];
           this.datos_totales = response[1];
-          console.log(this.datos_totales)
         }
 
       })
