@@ -2,18 +2,18 @@
     <div class="container">
         <form novalidate [formGroup]="formulario_colabora" (ngSubmit)="onSubmit()" method="POST">
             <div class="formcol">
-                <label for=""><i class="fas fa-list"></i> Selecciona una profesión</label>
+                <label><i class="fas fa-list"></i> Selecciona una profesión</label>
                 <select formControlName="cargo">
                     <option value="" disabled>Ej. Full-stack</option>
                     <option value="Full-stack">Full-stack</option>
-                    <option value="Fron-tend">Front-end</option>
+                    <option value="Front-end">Front-end</option>
                     <option value="Back-end">Back-end</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['cargo'].errors?.required && formulario_colabora.controls['cargo'].touched">
                     ⚠ El campo profesión es requerido ⚠
                 </p>
 
-                <label for=""><i class="far fa-calendar-check"></i> Selecciona tu experiencia</label>
+                <label><i class="far fa-calendar-check"></i> Selecciona tu experiencia</label>
                 <select formControlName="experiencia">
                     <option value="" disabled>Ej. 2 años</option>
                     <option value="0">Sin experiencia</option>
@@ -28,30 +28,30 @@
                 </p>
             </div>
             <div class="formcol">
-                <label for=""><i class="far fa-file-code"></i> Selecciona la tecnología con la que trabajas</label>
+                <label><i class="far fa-file-code"></i> Selecciona la tecnología con la que trabajas</label>
                 <select formControlName="tecnologia">
                     <option value="" disabled>Ej. JavaScript</option>
                     <option value="Javascript">JavaScript</option>
-                    <option value="Angular">Angular</option>
-                    <option value="React">React</option>
-                    <option value="Vue.js">VueJS</option>
-                    <option value="PHP">PHP</option>
-                    <option value="NodeJS">NodeJS</option>
+                    <option value="Angular" [disabled]="formulario_colabora.controls['cargo'].value=='Back-end'">Angular</option>
+                    <option value="React" [disabled]="formulario_colabora.controls['cargo'].value=='Back-end'">React</option>
+                    <option value="Vue.js" [disabled]="formulario_colabora.controls['cargo'].value=='Back-end'">VueJS</option>
+                    <option value="PHP" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">PHP</option>
+                    <option value="NodeJS" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">NodeJS</option>
                     <option value="Java">Java</option>
-                    <option value=".Net">.Net</option>
-                    <option value="Python">Python</option>
+                    <option value=".Net" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">.Net</option>
+                    <option value="Python" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">Python</option>
                 </select>
                 <p class="error" *ngIf="formulario_colabora.controls['tecnologia'].errors?.required && formulario_colabora.controls['tecnologia'].touched">
                     ⚠ El campo tecnologías es requerido ⚠
                 </p>
-                <label for=""><i class="far fa-money-bill-alt"></i> Selecciona tu sueldo bruto anual</label>
+                <label><i class="far fa-money-bill-alt"></i> Selecciona tu sueldo bruto anual</label>
                 <input type="number" formControlName="bruto" min="12000" max="60000" placeholder="Ej. 20000">
             </div>
             <p class="error" *ngIf="formulario_colabora.controls['bruto'].errors?.required && formulario_colabora.controls['bruto'].touched">
                 ⚠ El campo sueldo es requerido ⚠
             </p>
             <div class="formcol">
-                <label for=""><i class="fas fa-desktop"></i> Seleciona el sector donde trabajas</label>
+                <label><i class="fas fa-desktop"></i> Seleciona el sector donde trabajas</label>
                 <select formControlName="sector">
                     <option value="" disabled><span>Ej. Consultora</span></option>
                     <option value="Consultora">Consultora</option>

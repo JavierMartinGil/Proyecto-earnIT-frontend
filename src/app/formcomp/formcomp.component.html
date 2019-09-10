@@ -32,14 +32,14 @@
                 <select formControlName="tecnologia">
                     <option value="" disabled>Ej. JavaScript</option>
                     <option value="Javascript">JavaScript</option>
-                    <option value="Angular" *ngIf="formulario_solicitud.controls['cargo']!='Back-end'">Angular</option>
-                    <option value="React">React</option>
-                    <option value="Vue.js">VueJS</option>
-                    <option value="PHP">PHP</option>
-                    <option value="NodeJS">NodeJS</option>
+                    <option value="Angular" [disabled]="formulario_solicitud.controls['cargo'].value=='Back-end'">Angular</option>
+                    <option value="React" [disabled]="formulario_solicitud.controls['cargo'].value=='Back-end'">React</option>
+                    <option value="Vue.js" [disabled]="formulario_solicitud.controls['cargo'].value=='Back-end'">VueJS</option>
+                    <option value="PHP" [disabled]="formulario_solicitud.controls['cargo'].value=='Front-end'">PHP</option>
+                    <option value="NodeJS" [disabled]="formulario_solicitud.controls['cargo'].value=='Front-end'">NodeJS</option>
                     <option value="Java">Java</option>
-                    <option value=".Net">.Net</option>
-                    <option value="Python">Python</option>
+                    <option value=".Net" [disabled]="formulario_solicitud.controls['cargo'].value=='Front-end'">.Net</option>
+                    <option value="Python" [disabled]="formulario_solicitud.controls['cargo'].value=='Front-end'">Python</option>
                 </select>
                 <p class="error" *ngIf="formulario_solicitud.controls['tecnologia'].errors?.required && formulario_solicitud.controls['tecnologia'].touched">
                     ⚠ El campo tecnologias es requerido ⚠
@@ -61,7 +61,7 @@
         </div>
         <div>
             <h3>Sueldo promedio b/a</h3>
-            <h4>{{salario_medio | currency:'EUR'}}</h4>
+            <h4>{{salario_medio | currency:'EUR':'symbol':'5.0-0'}}</h4>
         </div>
         <div>
             <h3>Tecnología usada</h3>
@@ -69,4 +69,4 @@
         </div>
     </div>
 </div>
-<app-tablaresultados [datos_totales]="datos_totales" [no_results]="no_results"></app-tablaresultados>
+<app-tablaresultados [datos_totales]="datos_totales" [no_results]="no_results" [salario_medio]="salario_medio"></app-tablaresultados>

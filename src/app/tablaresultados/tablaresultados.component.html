@@ -13,7 +13,7 @@
         </tr>
         <tr *ngFor="let dev of datos_totales">
             <td>{{dev.cargo}}</td>
-            <td>{{dev.bruto | currency:'EUR'}}</td>
+            <td>{{dev.bruto | currency:'EUR':'symbol':'5.0-0'}}</td>
             <td>{{dev.tecnologia}}</td>
             <td>{{dev.experiencia}}</td>
             <td>{{dev.sector}}</td>
