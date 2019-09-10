@@ -32,7 +32,7 @@
                 <select formControlName="tecnologia">
                     <option value="" disabled>Ej. JavaScript</option>
                     <option value="Javascript">JavaScript</option>
-                    <option value="Angular">Angular</option>
+                    <option value="Angular" *ngIf="formulario_solicitud.controls['cargo']!='Back-end'">Angular</option>
                     <option value="React">React</option>
                     <option value="Vue.js">VueJS</option>
                     <option value="PHP">PHP</option>
@@ -51,8 +51,9 @@
         </form>
     </div>
 </div>
-<div class="container res">
-    <h2 #respuesta>Resultados de la búsqueda</h2>
+<div #respuesta></div>
+<div class="container res" *ngIf="salario_medio">
+    <h2>Resultados de la búsqueda</h2>
     <div class="resultados">
         <div>
             <h3>Título de la ocupación</h3>
@@ -60,7 +61,7 @@
         </div>
         <div>
             <h3>Sueldo promedio b/a</h3>
-            <h4>{{salario_medio || 'Salario'}} <i class="fas fa-euro-sign"></i></h4>
+            <h4>{{salario_medio | currency:'EUR'}}</h4>
         </div>
         <div>
             <h3>Tecnología usada</h3>
@@ -68,4 +69,4 @@
         </div>
     </div>
 </div>
-<app-tablaresultados [datos_totales]="datos_totales"></app-tablaresultados>
+<app-tablaresultados [datos_totales]="datos_totales" [no_results]="no_results"></app-tablaresultados>

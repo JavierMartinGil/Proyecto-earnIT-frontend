@@ -5,18 +5,12 @@
 
 .formulario_colabora .container {
     max-width: 95%;
-    margin: 10px auto;
-    padding: 20px;
+    margin: 50px auto;
+    padding: 40px 20px;
     box-shadow: 6px 3px 36px #929292;
     border-radius: 25px;
     background: #fff;
     max-width: 75%;
-}
-
-div.formcol {
-    /* display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between; */
 }
 
 div.formcol input[type=number],
@@ -49,13 +43,6 @@ div.formcol select:hover{
     padding-left: 15px;
 }
 
-form select, input {
-    /* border: none;
-    border-bottom: 3px solid #f03c79;    
-    color: #6e6e6e;
-    font-weight: bold;
-    transition: .5s;    */
-}
 
 div.formcol label{
     display: block;

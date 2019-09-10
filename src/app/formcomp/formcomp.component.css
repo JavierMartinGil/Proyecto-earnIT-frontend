@@ -1,15 +1,11 @@
-.formulario .container form{
-    /* display: flex;
-    justify-content: space-between; */
-}
-
 .formulario {
     padding: 20px 0;
+    margin-bottom: 50px;
 }
 
 .formulario .container{
     margin: 10px auto;
-    padding: 20px;
+    padding: 50px 20px;
     box-shadow: 6px 3px 36px #929292;
     border-radius: 25px;
     background: #fff;

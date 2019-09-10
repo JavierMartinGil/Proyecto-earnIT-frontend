@@ -9,6 +9,7 @@ export class TablaresultadosComponent implements OnInit {
 
 
   @Input() datos_totales: any;
+  @Input() no_results: string;
 
   constructor() { }
 

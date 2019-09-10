@@ -39,6 +39,13 @@ table td:hover, table tr:hover,table th:hover{
     margin-top: 15px;
 }
 
+h3.no_res {
+    font-size: 2em;
+    margin: 40px 0;
+    color: #2d4084;
+    text-align: center;
+}
+
 @media (max-width: 900px){
     table td {
     padding: 20px 5px;

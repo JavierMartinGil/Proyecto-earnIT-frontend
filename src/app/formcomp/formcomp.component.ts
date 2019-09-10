@@ -11,14 +11,15 @@ import { Router } from '@angular/router';
 export class FormcompComponent implements OnInit {
 
   formulario_solicitud: FormGroup;
-  salario_medio: string;
+  salario_medio: number;
   datos_devs: any;
   datos_totales: any;
+  no_results: string;
 
 
   constructor(private comparaService: ComparaService, private router: Router) {
 
-    this.salario_medio = "";
+    this.salario_medio = 0
     this.datos_devs = [];
 
     this.formulario_solicitud = new FormGroup({
@@ -37,14 +38,13 @@ export class FormcompComponent implements OnInit {
   onSubmit() {
     this.comparaService.comparar(this.formulario_solicitud.value)
       .then(response => {
-        if (response[0][0]['salario_medio'] == null) {
-          this.salario_medio = 'No hay resultados';
-
-        } else {
-          this.salario_medio = response[0][0]['salario_medio'].toString().substring(0, 5);
-          this.datos_devs = response[1][0];
-          this.datos_totales = response[1];
+        this.salario_medio = response[0][0]['salario_medio'];
+        this.datos_devs = response[1][0];
+        this.datos_totales = response[1];
+        if (this.salario_medio == null) {
+          this.no_results = 'Lo sentimos, no hay resultados para tu búsqueda :\'('
         }
+
 
       })
       .catch(err => {
