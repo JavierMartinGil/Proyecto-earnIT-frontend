@@ -37,7 +37,7 @@
                     <option value="Vue.js" [disabled]="formulario_colabora.controls['cargo'].value=='Back-end'">VueJS</option>
                     <option value="PHP" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">PHP</option>
                     <option value="NodeJS" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">NodeJS</option>
-                    <option value="Java">Java</option>
+                    <option value="Java" [disabled]="formulario_solicitud.controls['cargo'].value=='Front-end'">Java</option>
                     <option value=".Net" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">.Net</option>
                     <option value="Python" [disabled]="formulario_colabora.controls['cargo'].value=='Front-end'">Python</option>
                 </select>
