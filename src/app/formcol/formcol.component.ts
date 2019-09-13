@@ -34,20 +34,17 @@ export class FormcolComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log(this.formulario_colabora.value);
+
     this.colaboraService.nuevo(this.formulario_colabora.value)
       .then(response => {
-        console.log(response);
         if (response) {
           this.router.navigate(['/gracias'])
         }
       })
       .catch(err => {
-        alert('Error en el registro. Inténtalo más tarde.');
+        alert('Error en el registro. Inténtalo de nuevo más tarde.');
       })
-
   }
-
 
   ngOnInit() {
   }

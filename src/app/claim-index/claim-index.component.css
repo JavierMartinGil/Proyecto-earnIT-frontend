@@ -85,9 +85,7 @@ div.texto_index div{
 
 }
 
-@media (max-width: 500px){
-
-
+@media (max-width: 650px){
 
 .btn_trans {   
     display: block;

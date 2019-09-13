@@ -19,7 +19,7 @@ export class FormcompComponent implements OnInit {
 
   constructor(private comparaService: ComparaService, private router: Router) {
 
-    this.salario_medio = 0
+    this.salario_medio = 0;
     this.datos_devs = [];
 
     this.formulario_solicitud = new FormGroup({
@@ -42,13 +42,13 @@ export class FormcompComponent implements OnInit {
         this.datos_devs = response[1][0];
         this.datos_totales = response[1];
         if (this.salario_medio == null) {
-          this.no_results = 'Lo sentimos, no hay resultados para tu búsqueda :\'('
+          this.no_results = 'Lo sentimos, no hay resultados para tu búsqueda :\'(';
+        } else {
+          this.no_results = '';
         }
-
-
       })
       .catch(err => {
-        alert(err.message);
+        this.no_results = 'Lo sentimos, ocurrió un error enviando el formulario, inténtalo de nuevo más tarde';
       })
   }
 

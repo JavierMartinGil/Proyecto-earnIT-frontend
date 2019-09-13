@@ -31,7 +31,7 @@
             <div> <label for=""><i class="fas fa-desktop"></i> Seleciona la tecnologías con la que trabajas</label>
                 <select formControlName="tecnologia">
                     <option value="" disabled>Ej. JavaScript</option>
-                    <option value="Javascript">JavaScript</option>
+                    <option value="Javascript" [disabled]="formulario_solicitud.controls['cargo'].value=='Back-end'">JavaScript</option>
                     <option value="Angular" [disabled]="formulario_solicitud.controls['cargo'].value=='Back-end'">Angular</option>
                     <option value="React" [disabled]="formulario_solicitud.controls['cargo'].value=='Back-end'">React</option>
                     <option value="Vue.js" [disabled]="formulario_solicitud.controls['cargo'].value=='Back-end'">VueJS</option>

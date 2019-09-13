@@ -33,10 +33,14 @@ option[disabled]{
     color: #e0e0e0;
 }
 
-.error{
+.error {
     width: 50%;
-    color: red;
+    color: #f8faff;
     margin: 20px auto;
+    background-color: crimson;
+    border: 1px solid #d30932;
+    padding: 10px 5px;
+    border-radius: 5px;
 }
 
 input[disabled]{
