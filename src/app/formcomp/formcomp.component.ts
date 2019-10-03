@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ComparaService } from '../compara.service'
-import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-formcomp',
@@ -17,7 +17,7 @@ export class FormcompComponent implements OnInit {
   no_results: string;
 
 
-  constructor(private comparaService: ComparaService, private router: Router) {
+  constructor(private comparaService: ComparaService) {
 
     this.salario_medio = 0;
     this.datos_devs = [];
